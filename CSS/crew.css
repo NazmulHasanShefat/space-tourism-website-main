@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+}
+:root{
+    --primaryColor: rgb(255,255,255);
+    --secenderyColor: rgb(208,214,249);
+    --darkColor: rgb(11,13,23);
+    --navFont: "Barlow Condensed", sans-serif;
+    --heading-Font1: "Barlow Condensed", sans-serif;
+}
+body{
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+}
+.crew-intro-text_i{
+    display: none;
+}
+.hero-crew-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.hero-crew{
+    width: 90%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.crew-info{
+    height: max-content;
+}
+.crew-image{
+    height: max-content;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+/* .crew-image img{
+    width: 390px;
+} */
+.crew-intro-text{
+    color: var(--primaryColor);
+    font-family: var(--heading-Font1);
+    letter-spacing:4px;
+    font-weight: 100;
+    font-size: 2rem;
+    height: 180px;
+    width: 100%;
+}
+.crew-rank{
+    color: #999999;
+    font-family: var(--primaryFont);
+    font-weight: 100;
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.crew-name{
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    font-weight: 100;
+    font-size: 4vw;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+.crew-details{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 1rem;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    color: var(--secenderyColor);
+}
+.crew-navigation{
+    width: 100%;
+    display:flex;
+    justify-content: start;
+}
+.crew-nav-buttons{
+    height: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.crew-btn{
+    width: 20px;
+    height: 20px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media screen and (max-width:822px) {
+    body{
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+        background-size: cover;
+    }
+    .hero-crew {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .crew-image {
+       grid-row: 1/2;
+       justify-items: center;
+    }
+    .crew-image img{
+        width: 40%;
+        height: auto;
+    }
+    .crew-info {
+        text-align: center;
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .crew-details {
+       padding-right: 0;
+    }
+    .crew-intro-text {
+        display: none;
+    }
+    .crew-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        grid-row: 1/2;
+        padding:30px 0;
+    }
+    .mobile-border{
+        width: 80%;
+        height: 1px;
+        background-color: #707070;
+    }
+    .crew-rank {
+        color: #999999;
+        font-family: var(--primaryFont);
+        font-weight: 100;
+        font-size: 4vw;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .crew-intro-text_i{
+        color: var(--primaryColor);
+        font-family: var(--heading-Font1);
+        letter-spacing:4px;
+        font-weight: 100;
+        font-size: 1.5rem;
+        height: max-content;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+@media screen and (max-width:500px) {
+    body{
+        background-image: url("../assets/crew/background-crew-mobile.jpg");
+        background-size: cover;
+    }
+    .crew-details {
+        padding-right: 0;
+        padding:5px 10px;
+        font-size: .9rem;
+    }
+    .crew-navigation {
+        padding: 10px 0;
+    }
+    .crew-nav-buttons{
+       width: max-content;
+       gap:25px;
+    }
+    .crew-btn {
+        width: 10px;
+        height: 10px;
+        background-color: var(--primaryColor);
+        border-radius: 50%;
+        cursor: copy;
+    }
+    .hero-crew-container {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+    }
+    .crew-name {
+        font-size: 7vw;
+    }
+}
