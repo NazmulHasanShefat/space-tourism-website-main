@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+}
+:root{
+    --primaryColor: rgb(255,255,255);
+    --secenderyColor: rgb(208,214,249);
+    --darkColor: rgb(11,13,23);
+    --navFont: "Barlow Condensed", sans-serif;
+    --heading-Font1: "Barlow Condensed", sans-serif;
+    --primaryFont: "Bellefair", serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: auto;
+}
+.vechicle-title-text{
+    width: 100%;
+    height: max-content;
+}
+.vechicle-title-text p{
+   font-family: var(--heading-Font1);
+   font-weight: 100;
+   font-size: 1.5rem;
+   letter-spacing: 3px;
+   color:var(--secenderyColor);
+   padding-left: 100px;
+}
+
+.hero-technology-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.hero-technology{
+    width: 100%;
+    margin-top:60px;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.vehicle-info{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.vechicle-main-info{
+    width: 65%;
+    height: max-content;
+    color:#fff;
+}
+.vehicle-image{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.vehicle-img-main{
+    width: 450px;
+    height: 400px;
+    background-image: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+    background-size: 100% 100%;
+}
+
+.indicator_buttons{
+    width: 10%;
+    height: max-content;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border:1px solid rgb(153, 151, 151);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.5rem;
+    font-weight: 600;
+    color: rgb(153, 151, 151);
+}
+.active-btn{
+    background-color: rgb(255, 255, 255);
+    color: var(--darkColor);
+}
+.title1{
+    font-family: var(--navFont);
+    font-weight: 100;
+    color: var(--primaryColor);
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.vechicle-name{
+    font-family: var(--primaryFont);
+    font-size: 3vw;
+    font-weight: 700;
+    padding:20px 0;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+}
+.vechicle-details{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: .9rem;
+    padding-bottom: 30px;
+    color: var(--secenderyColor);
+}
+@media screen and (max-width:800px) {
+    .body{
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+
+    }
+    .hero-technology{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .vehicle-image {
+        grid-row: 1/2;
+        justify-content: center;
+    }
+    .vehicle-img-main{
+        width: 77%;
+        height: 200px;
+        background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
+    }
+    .vehicle-info {
+        height: 353px;
+        flex-direction: column;
+    }
+    .indicator_buttons {
+        width: max-content;
+        display: flex;
+        gap: 57px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .btn {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+    }
+    .vechicle-main-info {
+        width: 90%;
+        height: max-content;
+        color: #fff;
+        text-align: center;
+    }
+    .hero-technology {
+        margin-top: 23px;
+    }
+    .indicator_buttons {
+        gap: 30px;
+    }
+    .vehicle-img-main {
+        width: 100%;
+        height: 200px;
+        background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
+    }
+}
