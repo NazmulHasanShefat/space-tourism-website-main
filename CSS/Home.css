@@ -262,7 +262,7 @@ nav{
     font-variation-settings:"slnt" 0;
     font-size: 1rem;
     padding-right:100px;
-    color:var(--secenderyColor)
+    color:var(--primaryColor);
 }
 .explorebtn{
     width: 250px;

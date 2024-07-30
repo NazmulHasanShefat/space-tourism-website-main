@@ -83,7 +83,7 @@ body{
     font-size: 1rem;
     padding-right: 100px;
     padding-bottom: 30px;
-    color: var(--secenderyColor);
+    color: var(--primaryColor);
 }
 .crew-navigation{
     width: 100%;
